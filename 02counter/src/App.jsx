@@ -1,5 +1,5 @@
 import { useState } from 'react'
-
+import './index.css'
 
 function App() {
 
@@ -11,13 +11,14 @@ function App() {
     //counter = counter + 1
 
     if (counter < 20) {
-      setCounter(prevCounter => prevCounter + 1)
+      setCounter(counter + 1)
+      
+      // setCounter(prevCounter => prevCounter + 1)
+      // setCounter(prevCounter => prevCounter + 1 )
+      // setCounter(prevCounter => prevCounter + 1)
+      // setCounter(prevCounter => prevCounter + 1)
     }
 
-    // setCounter(prevCounter => prevCounter + 1)
-    // setCounter(prevCounter => prevCounter + 1 )
-    // setCounter(prevCounter => prevCounter + 1)
-    // setCounter(prevCounter => prevCounter + 1)
     
   }
 
@@ -29,6 +30,7 @@ function App() {
   
   return (
     <>
+      <div id="body">
       <h1>Chai aur react</h1>
       <h2>Counter value: {counter}</h2>
 
@@ -40,6 +42,7 @@ function App() {
       onClick={removeValue}
       >remove value {counter}</button>
       <p>footer: {counter}</p>
+      </div>
     </>
   )
 }
